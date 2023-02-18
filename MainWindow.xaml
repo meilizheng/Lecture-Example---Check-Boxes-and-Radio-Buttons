@@ -6,7 +6,37 @@
         xmlns:local="clr-namespace:Lecture_Example___Check_Boxes_and_Radio_Buttons"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Canvas
+        Background="#FF2D5F45">
+        <Canvas HorizontalAlignment="Left" Height="159" VerticalAlignment="Top" Width="207" Background="#FF3FB5A8" Canvas.Left="569" Canvas.Top="22"/>
+        <CheckBox x:Name="ckPepperoni" Content="Pepperoni - $4" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="165" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Canvas.Left="584" Canvas.Top="41"/>
+        <CheckBox x:Name="ckMushrooms" Content="Mushrooms - $2" HorizontalAlignment="Left" Height="31" VerticalAlignment="Center" Width="180" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Canvas.Left="584" Canvas.Top="113"/>
+        <CheckBox x:Name="ckPineapple" Content="Pineapple - $8" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="165" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Canvas.Left="584" Canvas.Top="150"/>
+        <RichTextBox  HorizontalAlignment="Left" Height="354" VerticalAlignment="Top" Width="262" FontFamily="Gabriola" FontSize="18" RenderTransformOrigin="0.75,0.515" Canvas.Left="252" Canvas.Top="22">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runReciept" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Canvas HorizontalAlignment="Left" Height="195" VerticalAlignment="Center" Width="207" Background="#FF3FB5A8" Canvas.Left="569" Canvas.Top="186">
+            <Button x:Name="btnOrderPizza" Content="Order Pizza" Height="29" Canvas.Left="40" Canvas.Top="213" Width="116" FontFamily="Goudy Old Style" FontSize="18" FontWeight="Bold" Click="btnOrderPizza_Click"/>
+            <RadioButton x:Name="rbSmall" Content="Small - $ 13" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="12" Canvas.Top="48" Width="126" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rbMedium" Content="Medium - $ 15" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="12" Canvas.Top="89" Width="146" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.569,1.878"/>
+            <RadioButton x:Name="rbLarge" Content="Large - $ 18" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="12" Canvas.Top="125" Width="145" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.486,-0.474"/>
+            <RadioButton x:Name="rbExtraLarge" Content="Extra Large - $20" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="12" Canvas.Top="158" Width="183" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="lbPizzaSize" Content="Pizza Size:" Height="28" Canvas.Left="23" Canvas.Top="15" Width="104" FontFamily="Ink Free" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <CheckBox x:Name="ckCheese" Content="Cheese - $ 5" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="165" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Canvas.Left="584" Canvas.Top="75"/>
+        <Canvas Height="195" Width="210" Background="#FF3FB5A8" Canvas.Left="22" Canvas.Top="181" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <RadioButton x:Name="rbDrinkSmall" Content="Small - $2" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="21" Canvas.Top="51" Width="106" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rbDrinkMedium" Content="Medium - $3.75" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="20" Canvas.Top="84" Width="162" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.569,1.878"/>
+            <RadioButton x:Name="rbDrinkLarge" Content="Large - $4.75" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="20" Canvas.Top="123" Width="162" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.486,-0.474"/>
+            <RadioButton x:Name="rbDrinkExtraLarge" Content="Extra Large - $7" FontFamily="Ink Free" FontSize="20" FontWeight="Bold" Height="27" Canvas.Left="20" Canvas.Top="158" Width="175" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="lbDrinkSize" Content="Drink Size" Height="26" Canvas.Left="20" Canvas.Top="20" Width="103" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Ink Free" FontWeight="Bold" FontSize="14"/>
+        </Canvas>
+        <Label x:Name="lbCustomerName" Content="Customer Name" Height="35" Canvas.Left="22" Canvas.Top="22" Width="188" FontFamily="Ink Free" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txtCustomerName" Height="44" Canvas.Left="22" TextWrapping="Wrap" Canvas.Top="62" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="20"/>
 
-    </Grid>
+    </Canvas>
 </Window>
